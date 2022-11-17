@@ -25,3 +25,13 @@
 #container a {
   text-decoration: none;
 }
+
+#tooblar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#head {
+  padding: 20px 5px;
+}

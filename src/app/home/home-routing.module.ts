@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePage } from './home.page';
+import { DefibrillateursPage } from './components/defibrillateurs/defibrillateurs.page';
+import { CommandesComponent } from './components/commandes/commandes.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: HomePage,
+    path: 'defibrillateurs',
+    component: DefibrillateursPage,
+  },
+  {
+    path: 'commandes', 
+    component: CommandesComponent,
   }
 ];
 
