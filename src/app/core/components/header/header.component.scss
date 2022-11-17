@@ -1,0 +1,27 @@
+ion-header {
+
+    ion-toolbar {
+        ion-title {
+            padding: 20px 20px 10px 20px;
+
+            img {
+                width: 30%;
+            }
+        }
+    }
+
+    ion-list {
+        border: black;
+        background-color: #000099;
+
+        ion-item {
+            ion-label {
+
+            }
+
+            button {
+                
+            }
+        }
+    }
+}

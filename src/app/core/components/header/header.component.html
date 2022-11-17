@@ -1,19 +1,23 @@
-<ion-menu>
-  <ion-header [translucent]="true">
-    <ion-toolbar color="primary" id="toolbar">
-      <ion-title>
-        <img src="../../assets/icon/LIFEAZ.png" alt="Logo LIFEAZ">
-      </ion-title>  
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <button ion-item (click)="onDefibrillateursPage()">
+<ion-header [translucent]="true" >
+  <ion-toolbar color="primary" id="toolbar">
+    <ion-title>
+      <img src="../../assets/icon/LIFEAZ.png" alt="Logo LIFEAZ">
+    </ion-title>  
+  </ion-toolbar>
+  <ion-list>
+    <img src="../../../../assets/icon/icon_menu.png" alt="icone menu">
+    <ion-item>
+      <ion-label>
         DÉFIBRILLATEURS
-      </button>
-      <button ion-item (click)="onCommandesPage()">
+      </ion-label>
+      <button ion-item (click)="onDefibrillateursPage()"></button>
+    </ion-item>
+    <ion-item>
+      <ion-label>
         COMMANDES
-      </button>
-    </ion-list>
-  </ion-content>
-</ion-menu> 
+      </ion-label>
+      <button ion-item (click)="onCommandesPage()"></button>
+    </ion-item>
+  </ion-list>
+</ion-header>
+
