@@ -1,5 +1,5 @@
-<ion-content [fullscreen]="true" color="medium" padding>
-  <ion-content color="medium" class="padding" id="head" padding>  
+<ion-content [fullscreen]="true"  padding>
+  <ion-content color="medium" class="secondary" id="head" padding>  
     <header>  
       <h2>
         MES DÉFIBRILLATEURS
@@ -14,6 +14,10 @@
       </div>
     </header>
     <main>
+
+      <div *ngFor="let defibrillateur of defibrillateurs$ | async"></div>
+      <section id="list"></section>
+      <!--
       <ul>
         <li>
           <div class="infos">
@@ -90,6 +94,7 @@
           </div>
         </li>
       </ul>
+      -->
     </main>
   </ion-content>
 </ion-content>

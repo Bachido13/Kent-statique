@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "latoBold";
+    src: url("../../../../assets/font/Lato-Black.ttf");
+  }
+  
+  @font-face {
+    font-family: "latoReg";
+    src: url("../../../../assets/font/Lato-Regular.ttf");
+  }
+  
+  $titre: "latoBold", arial, sans-serif;
+  $content: "latoReg", arial, sans-serif;
+  
+  ion-content {
+  
+    header {
+  
+      padding: 10px 25px;
+      display: flex;
+      flex-direction: column;
+  
+  
+      h2 {
+        color: #000099;
+        font-weight: bold;
+        font-family: $titre;
+        font-size: 18px;
+        margin: 0 0 5px 0;
+      }
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    header {
+  
+      h2 {
+        font-size: 22px;
+      }
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    header {
+  
+      h2 {
+        font-size: 28px;
+      }
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    header {
+  
+      h2 { 
+        font-size: 35px;
+      }
+    }
+}

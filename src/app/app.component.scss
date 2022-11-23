@@ -1,4 +1,14 @@
 ion-app {
-    display: flex;
-    flex-direction: column;
+
+    app-header {                
+        background-color: #000099;
+        display: block;
+    }
+
+    ion-router-outlet {
+        display: block;
+        background-color: rgb(234, 235, 242);
+        position: absolute;
+        top: 55px;
+    }
 }

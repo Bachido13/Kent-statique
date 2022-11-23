@@ -1,27 +1,181 @@
+@font-face {
+    font-family: "latoBold";
+    src: url("../../../../assets/font/Lato-Black.ttf");
+}
+  
+@font-face {
+    font-family: "latoReg";
+    src: url("../../../../assets/font/Lato-Regular.ttf");
+}
+  
+$titre: "latoBold", arial, sans-serif;
+$content: "latoReg", arial, sans-serif;
+
+
 ion-header {
 
-    ion-toolbar {
-        ion-title {
-            padding: 20px 20px 10px 20px;
+    ion-toolbar {  
+        padding: 0 25px;
+        
+        #toolbar {
+            display: flex;
+            padding-top: 10px;
 
-            img {
-                width: 30%;
+            ion-title {
+                object-fit: contain;
+                padding: 0;
+
+                img {
+                    width: 35%;
+                }
+            }
+
+            ion-list {
+                border: black;
+                background-color: #000099;
+                width: 25%;
+                display: flex;
+                justify-content: end;
+                padding-right: 5%;
+
+                a {
+                    display: inline-block;
+                    object-fit: contain;
+                }
+        
+                a :active :focus {
+                    display: none;
+                }
             }
         }
-    }
 
-    ion-list {
-        border: black;
-        background-color: #000099;
+        #menu {
+            display: none;
+            background-color: #000099;
+            border-left:  solid #6969b5b6;
+            margin: 10px 0;
+            padding-top: 10px;
+    
+            ion-item {
+                height: 30px;
+                display: flex;
+                align-items: flex-start;
 
-        ion-item {
-            ion-label {
+                ion-label {
+                    border: none;
+                    font-family: $content;
+                    font-size: 10px;
+                    margin: 0;
+                }
+            }
+        }
+    }   
+}
 
+@media screen and (min-width:768px) {
+
+    ion-toolbar {
+        #toolbar {
+            ion-title {
+                img {
+                    width: 15%;
+                }
             }
 
-            button {
-                
+            ion-list {
+
+                a {
+
+                    img {
+                        width: 110%;
+                    }
+                }
+            }
+        }
+
+        #menu {
+            ion-item {
+                ion-label {
+                    font-size: 12px;
+                }
             }
         }
     }
 }
+
+@media screen and (min-width:1024px) {
+
+    ion-toolbar {
+        #toolbar {
+            ion-title {
+                img {
+                    width: 20%;
+                }
+            }
+
+            ion-list {
+                a {
+                    img {
+                        width: 150%;
+                    }
+                }
+            }
+        }
+
+        #menu {
+            ion-item {
+                ion-label {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    ion-toolbar {
+        #toolbar {
+            ion-title {
+                img {
+                    width: 15%;
+                }
+            }
+
+            ion-list {
+                a {
+                    width: 175%;
+                }
+            }
+        }
+
+        #menu {
+            ion-item {
+                ion-label {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+//@media screen and (min-width:2560px) {
+
+    ion-toolbar {
+        #toolbar {
+            ion-title {
+                img {}
+            }
+
+            ion-list {
+                a {}
+            }
+        }
+
+        #menu {
+            ion-item {
+                ion-label {}
+            }
+        }
+    }
+//}

@@ -10,11 +10,31 @@ export class HeaderComponent  {
 
   constructor( private router: Router) { }
 
+  onMenuView() {
+    const menu = document.getElementById('menu');
+
+    if(menu != null) {
+      menu.style.display = "block";
+    }
+  }
+
   onDefibrillateursPage() {
-    this.router.navigateByUrl('home/defibrillateurs')
+    this.router.navigateByUrl('home/defibrillateurs');
+
+    const menu = document.getElementById('menu');
+
+    if(menu != null) {
+      menu.style.display = "none";
+    }
   }
 
   onCommandesPage() {
-    this.router.navigateByUrl('home/commandes')
+    this.router.navigateByUrl('home/commandes');
+
+    const menu = document.getElementById('menu');
+
+    if(menu != null) {
+      menu.style.display = "none";
+    }
   }
 }
